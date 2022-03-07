@@ -1,0 +1,475 @@
+[
+  {
+    "x": 0,
+    "y": 0,
+    "w": 6,
+    "h": 1,
+    "i": "0",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "title": { "text": "Line" },
+      "xAxis": {
+        "type": "category",
+        "boundaryGap": false,
+
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun",
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun",
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun",
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun",
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      },
+      "tooltip": { "trigger": "axis", "axisPointer": { "type": "shadow" } },
+      "yAxis": { "type": "value" },
+      "series": [
+        {
+          "data": [
+            120,
+            322,
+            221,
+            440,
+            250,
+            660,
+            770,
+            440,
+            990,
+            720,
+            1020,
+            910,
+            120,
+            322,
+            221,
+            440,
+            250,
+            660,
+            770,
+            440,
+            990,
+            720,
+            1020,
+            910,
+            120,
+            322,
+            221,
+            440,
+            250,
+            660,
+            770,
+            440,
+            990,
+            720,
+            1020,
+            910,
+            120,
+            322,
+            221,
+            440,
+            250,
+            660,
+            770,
+            440,
+            990,
+            720,
+            1020,
+            910,
+            120,
+            322,
+            221,
+            440,
+            250,
+            660,
+            770,
+            440,
+            990,
+            720,
+            1020,
+            910,
+            1200
+          ],
+          "type": "line",
+          "areaStyle": {
+            "color": {
+              "x": 1,
+              "y": 1,
+              "r": 0,
+              "colorStops": [
+                { "offset": 0, "color": "#FF76DB" },
+                { "offset": 1, "color": "#76FFE9" }
+              ],
+              "global": false
+            }
+          },
+          "lineStyle": {
+            "normal": {
+              "color": "#69E1CD",
+              "width": 1,
+              "type": "dashed"
+            }
+          }
+        }
+      ],
+      "backgroundColor": "#ffffff"
+    }
+  },
+  {
+    "x": 0,
+    "y": 1,
+    "w": 2,
+    "h": 1,
+    "i": "1",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "backgroundColor": "#ffffff",
+      "title": {
+        "text": "Bar"
+      },
+      "tooltip": { "trigger": "axis", "axisPointer": { "type": "shadow" } },
+      "grid": {
+        "left": "3%",
+        "right": "4%",
+        "bottom": "3%",
+        "containLabel": true
+      },
+      "xAxis": [
+        {
+          "type": "category",
+          "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          "axisTick": { "alignWithLabel": true }
+        }
+      ],
+      "yAxis": [{ "type": "value" }],
+      "series": [
+        {
+          "name": "Bar",
+          "type": "bar",
+          "barWidth": "60%",
+          "data": [10, 52, 200, 334, 390, 330, 220]
+        }
+      ],
+      "color": {
+        "type": "linear",
+        "x": 0,
+        "y": 1,
+        "r": 0,
+        "colorStops": [
+          { "offset": 0, "color": "#2fb9f8" },
+          { "offset": 1, "color": "#7956ec" }
+        ],
+        "global": false
+      }
+    }
+  },
+  {
+    "x": 2,
+    "y": 1,
+    "w": 2,
+    "h": 1,
+    "i": "2",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "backgroundColor": "#ffffff",
+      "title": { "text": "Line Area" },
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{b} : {c}"
+      },
+      "xAxis": {
+        "type": "category",
+        "boundaryGap": false,
+        "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      },
+      "yAxis": { "type": "value" },
+      "series": [
+        {
+          "data": [1000, 790, 1190, 901, "-", 532, 820],
+          "type": "line",
+          "smooth": true,
+          "areaStyle": {
+            "color": {
+              "type": "linear",
+              "x": 0,
+              "y": 0,
+              "r": 0,
+              "colorStops": [
+                { "offset": 0, "color": "#E6FF00" },
+                { "offset": 1, "color": "#7956ec" }
+              ],
+              "global": false
+            }
+          }
+        }
+      ],
+      "color": ["#7956ec"]
+    }
+  },
+  {
+    "x": 4,
+    "y": 1,
+    "w": 2,
+    "h": 1,
+    "i": "3",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "backgroundColor": "#ffffff",
+      "title": { "text": "Pie - Circle" },
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b} : {c} ({d}%)"
+      },
+      "legend": {
+        "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "top": 20,
+        "selected": {
+          "Mon": true,
+          "Tue": true,
+          "Wed": true,
+          "Thu": true,
+          "Fri": true,
+          "Sat": true,
+          "Sun": false
+        }
+      },
+      "series": [
+        {
+          "name": "Chart",
+          "type": "pie",
+          "radius": "60%",
+          "data": [
+            { "name": "Mon", "value": 14024 },
+            { "name": "Tue", "value": 30790 },
+            { "name": "Wed", "value": 2762 },
+            { "name": "Thu", "value": 20085 },
+            { "name": "Fri", "value": 1329 },
+            { "name": "Sat", "value": 62370 },
+            { "name": "Sun", "value": 92449 }
+          ],
+          "itemStyle": {
+            "emphasis": {
+              "shadowBlur": 20,
+              "shadowOffsetX": 0,
+              "shadowColor": "rgba(0, 0, 0, 0.5)"
+            }
+          }
+        }
+      ],
+      "color": [
+        "#9999ff",
+        "#009fc5",
+        "#f23673",
+        "#5134b2",
+        "#2fb9f8",
+        "#ffc066",
+        "#00ff00"
+      ]
+    }
+  },
+  {
+    "x": 2,
+    "y": 5,
+    "w": 2,
+    "h": 1,
+    "i": "4",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "backgroundColor": "#ffffff",
+      "title": { "text": "Pie - Donut" },
+      "tooltip": { "trigger": "item", "formatter": "{a} <br/>{b}: {c} ({d}%)" },
+      "legend": {
+        "top": 20,
+        "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      },
+      "series": [
+        {
+          "name": "Chart",
+          "type": "pie",
+          "radius": ["50%", "70%"],
+          "avoidLabelOverlap": false,
+          "label": {
+            "normal": { "show": false, "position": "center" },
+            "emphasis": {
+              "show": true,
+              "textStyle": { "fontSize": "30", "fontWeight": "bold" }
+            }
+          },
+          "labelLine": { "normal": { "show": false } },
+          "itemStyle": {
+            "emphasis": {
+              "shadowBlur": 20,
+              "shadowOffsetX": 0,
+              "shadowColor": "rgba(0, 0, 0, 0.5)"
+            }
+          },
+          "data": [
+            { "name": "Mon", "value": 14024 },
+            { "name": "Tue", "value": 20790 },
+            { "name": "Wed", "value": 12762 },
+            { "name": "Thu", "value": 20085 },
+            { "name": "Fri", "value": 11329 },
+            { "name": "Sat", "value": 22370 },
+            { "name": "Sun", "value": 12449 }
+          ]
+        }
+      ],
+      "color": [
+        "#0900FF",
+        "#DEFF00",
+        "#f23673",
+        "#5134b2",
+        "#2fb9f8",
+        "#ffc066",
+        "#00ff00"
+      ]
+    }
+  },
+  {
+    "x": 4,
+    "y": 6,
+    "w": 2,
+    "h": 1,
+    "i": "5",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "title": { "text": "Line" },
+      "tooltip": {
+        "trigger": "item",
+        "formatter": "{b} : {c}"
+      },
+      "backgroundColor": "#ffffff",
+      "xAxis": {
+        "type": "category",
+        "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      },
+      "yAxis": { "type": "value" },
+      "series": [
+        {
+          "data": [820, 932, 901, 934, 1290, 1330, 1320],
+          "type": "bar",
+          "barWidth": "30%",
+          "color": "lightgray"
+        },
+        {
+          "data": [820, 932, 901, 934, 1290, 1330, 1320],
+          "type": "line",
+          "lineStyle": {
+            "normal": {
+              "color": "red"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "x": 0,
+    "y": 6,
+    "w": 2,
+    "h": 1,
+    "i": "6",
+    "width": "350",
+    "height": "350",
+    "option": {
+      "title": {
+        "text": "Bar Chart with Negative Value"
+      },
+      "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+          "type": "shadow"
+        }
+      },
+      "grid": {
+        "top": 80,
+        "bottom": 30
+      },
+      "xAxis": {
+        "type": "value",
+        "position": "top",
+        "splitLine": {
+          "lineStyle": {
+            "type": "dashed"
+          }
+        }
+      },
+      "yAxis": {
+        "type": "category",
+        "axisLine": { "show": false },
+        "axisLabel": { "show": false },
+        "axisTick": { "show": false },
+        "splitLine": { "show": false },
+        "data": [
+          "ten",
+          "nine",
+          "eight",
+          "seven",
+          "six",
+          "five",
+          "four",
+          "three",
+          "two",
+          "one"
+        ]
+      },
+      "series": [
+        {
+          "name": "Cost",
+          "type": "bar",
+          "stack": "Total",
+          "label": {
+            "show": true,
+            "formatter": "{b}"
+          },
+          "data": [
+            { "value": -0.07, "label": "labelRight" },
+            { "value": -0.09, "label": "labelRight" },
+            0.2,
+            0.44,
+            { "value": -0.23, "label": "labelRight" },
+            0.08,
+            { "value": -0.17, "label": "labelRight" },
+            0.47,
+            { "value": -0.36, "label": "labelRight" },
+            0.18
+          ]
+        }
+      ],
+      "color": "#00DE94"
+    }
+  }
+]
